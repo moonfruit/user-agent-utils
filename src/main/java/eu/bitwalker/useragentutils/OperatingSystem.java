@@ -103,6 +103,10 @@ public enum OperatingSystem {
 	 * iOS4, with the release of the iPhone 4, Apple renamed the OS to iOS.
 	 */	
 	IOS(			Manufacturer.APPLE,null, 2, "iOS", new String[] { "iPhone", "like Mac OS X" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+		iOS10_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 130, "iOS 10.3 (iPhone)", new String[] { "iPhone OS 10_3" },  null, DeviceType.MOBILE, null ), // before // // MAC_OS_X_IPHONE for all older versions
+		iOS10_2_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 120, "iOS 10.2 (iPhone)", new String[] { "iPhone OS 10_2" },  null, DeviceType.MOBILE, null ), // before // // MAC_OS_X_IPHONE for all older versions
+		iOS10_1_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 110, "iOS 10.1 (iPhone)", new String[] { "iPhone OS 10_1" },  null, DeviceType.MOBILE, null ), // before // // MAC_OS_X_IPHONE for all older versions
+		iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 100, "iOS 10 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before // MAC_OS_X_IPHONE for all older versions
 		iOS9_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 9" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 49, "iOS 8.4 (iPhone)", new String[] { "iPhone OS 8_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 48, "iOS 8.3 (iPhone)", new String[] { "iPhone OS 8_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions

@@ -51,6 +51,8 @@ import eu.bitwalker.useragentutils.browser.SafariUtils;
 
 public enum Browser {
 
+	WE_CHAT(Manufacturer.OTHER, null, 100, "WeChat", new String[] {"MicroMessenger"}, null, BrowserType.APP, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("MicroMessenger/(([0-9]+).([0-9]+)[0-9.]*)")),
+
 	/**
 	 * Outlook email client
 	 */
