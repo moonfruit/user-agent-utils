@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.bitwalker</groupId>
+	<groupId>com.github.moonfruit</groupId>
 	<name>User-Agent-Utils</name>
 	<url>http://www.bitwalker.eu/software/user-agent-utils</url>
 	<artifactId>UserAgentUtils</artifactId>
@@ -12,36 +12,16 @@
 	<properties>
 		<github.global.server>github</github.global.server>
 	</properties>
-	<licenses>
-		<license>
-			<name>New BSD License</name>
-			<url>
-				http://user-agent-utils.googlecode.com/svn/trunk/UserAgentUtils/LICENSE.txt
-			</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	<developers>
-		<developer>
-			<id>haraldwalker</id>
-			<name>Harald Walker</name>
-			<url>http://www.bitwalker.eu</url>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-2</timezone>
-		</developer>
-	</developers>
 
 	<issueManagement>
-		<url>https://github.com/HaraldWalker/user-agent-utils/issues</url>
+		<url>https://github.com/moonfruit/user-agent-utils/issues</url>
 		<system>GitHub</system>
 	</issueManagement>
 
 	<scm>
-		<url>https://github.com/HaraldWalker/user-agent-utils</url>
-		<connection>scm:git:git://github.com:HaraldWalker/user-agent-utils.git</connection>
-		<developerConnection>scm:git:git@github.com:HaraldWalker/user-agent-utils.git</developerConnection>
+		<url>https://github.com/moonfruit/user-agent-utils</url>
+		<connection>scm:git:git://github.com:moonfruit/user-agent-utils.git</connection>
+		<developerConnection>scm:git:git@github.com:moonfruit/user-agent-utils.git</developerConnection>
 	</scm>
 
 	<distributionManagement>
