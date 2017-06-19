@@ -3,39 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.moonfruit</groupId>
+	<groupId>com.hotmart.lib</groupId>
 	<name>User-Agent-Utils</name>
 	<url>http://www.bitwalker.eu/software/user-agent-utils</url>
-	<artifactId>UserAgentUtils</artifactId>
+	<artifactId>user-agent-utils</artifactId>
 	<version>1.21-SNAPSHOT</version>
 	<description>Utility classes to handle user-agents.</description>
 	<properties>
 		<github.global.server>github</github.global.server>
 	</properties>
-
-	<issueManagement>
-		<url>https://github.com/moonfruit/user-agent-utils/issues</url>
-		<system>GitHub</system>
-	</issueManagement>
-
-	<scm>
-		<url>https://github.com/moonfruit/user-agent-utils</url>
-		<connection>scm:git:git://github.com:moonfruit/user-agent-utils.git</connection>
-		<developerConnection>scm:git:git@github.com:moonfruit/user-agent-utils.git</developerConnection>
-	</scm>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<name>Maven Central Staging Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
 	<build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
 		<plugins>
@@ -47,122 +23,8 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.3</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.4</version>
-				<configuration>
-					<outputDirectory>
-						site/
-					</outputDirectory>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.3</version>
-				<configuration>
-					<destDir>javadoc</destDir>
-					<excludes>
-						<exclude>**/Test*.java</exclude>
-					</excludes>
-				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<useFile>true</useFile>
-					<argLine>-ea</argLine>
-					<excludes>
-						<exclude>**/Test*.java</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>2.5.2</version>
-			</plugin>
-
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.6</version>
-				<configuration>
-    <useAgent>true</useAgent>
-  </configuration>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
-	<reporting>
-		<outputDirectory>site</outputDirectory>
-		<plugins>
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.3</version>
-				<configuration>
-					<destDir>javadoc2</destDir>
-					<excludes>
-						<exclude>**/Test*.java</exclude>
-					</excludes>
-					<sourcepath>src/main/java</sourcepath>
-					<subpackages>eu.bitwalker.useragentutils</subpackages>
-					<source>1.6</source>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>
-					maven-project-info-reports-plugin
-				</artifactId>
-				<version>2.7</version>
-			</plugin>
-		</plugins>
-	</reporting>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
