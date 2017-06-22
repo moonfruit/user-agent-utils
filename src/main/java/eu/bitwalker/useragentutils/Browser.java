@@ -50,6 +50,8 @@ import eu.bitwalker.useragentutils.browser.SafariUtils;
  */
 
 public enum Browser {
+	
+	FACEBOOK_APP(Manufacturer.FACEBOOK, null, 100, "Facebook App", new String[] {"FBAN", "FBIOS", "FB4A"}, null, BrowserType.APP, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("FBAV\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)")),
 
 	WE_CHAT(Manufacturer.OTHER, null, 100, "WeChat", new String[] {"MicroMessenger"}, null, BrowserType.APP, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("MicroMessenger/(([0-9]+).([0-9]+)[0-9.]*)")),
 

@@ -136,7 +136,11 @@ public enum Manufacturer {
 	/**
 	 * Canonical Ltd.
 	 */
-	CONONICAL(25,"Canonical Ltd.");
+	CONONICAL(25,"Canonical Ltd."),
+	/**
+	 * Facebook Inc.
+	 */
+	FACEBOOK(26, "Facebook Inc.");
 	
 	
 	
