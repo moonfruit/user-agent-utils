@@ -68,3 +68,4 @@ buildNumber.properties
 
 ### My Ignore
 MyTest.java
+/zoo
