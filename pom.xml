@@ -25,15 +25,16 @@
 	</scm>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<name>Maven Central Staging Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>release</id>
+			<name>Gingkoo Release Repository</name>
+			<url>http://127.0.0.1/nexus/repositories/releases</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<name>Gingkoo Snapshot Repository</name>
+			<url>http://127.0.0.1/nexus/repositories/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<build>
