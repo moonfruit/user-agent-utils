@@ -557,6 +557,26 @@ public class BrowserTest {
 			"Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7 (via ggpht.com)" // Gmail proxy server
 	};
 	
+	String[] facebook = {
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]",
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-G610M Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]",								
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]",
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/141.0.0.51.91;FBBV/71695290;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/VIVO;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/0]",
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/141.0.0.51.91;FBBV/71695290;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/VIVO;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/0]",
+	};
+	
+	String[] instagram = {
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 15.0.0.30.88 (iPhone9,4; iOS 10_3_3; pt_BR; pt-BR; scale=2.61; gamut=wide; 1080x1920)",
+	        "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372 Instagram 15.0.0.30.88 (iPhone9,3; iOS 11_0; pt_BR; pt-BR; scale=2.00; gamut=wide; 750x1334)",
+	        "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372 Instagram 15.0.0.30.88 (iPhone8,1; iOS 11_0; pt_BR; pt-BR; scale=2.00; gamut=normal; 750x1334)."
+	};
+	
+	String[] Pinterest = {
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [Pinterest/iOS]",
+	        "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [Pinterest/iOS]",
+	        "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372 [Pinterest/iOS]"
+	};
+	
 	/**
 	 * Test method for {@link eu.bitwalker.useragentutils.Browser#isInUserAgentString(java.lang.String)}.
 	 */
@@ -716,6 +736,7 @@ public class BrowserTest {
 		testAgents(airApp, Browser.ADOBE_AIR);
 		testAgents(blackberry10, Browser.BLACKBERRY10);
 		testAgents(vivaldi, Browser.VIVALDI);
+		testAgents(facebook, Browser.FACEBOOK_APP);
 	}
 	
 	@Test
